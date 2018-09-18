@@ -1,0 +1,292 @@
+
+/*________________________________________________
+          header styling shrinkage and Logo*/
+@media(min-width:768px) {
+    .navbar-default {
+        z-index: 5;
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        color: #828282;
+        font-size: 2em;
+        background-color: transparent;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        font-family: 'Pacifico', cursive;
+        border-radius: 3px;
+        background-color: transparent;
+    }
+
+    /*header style*/
+    .navbar-default.navbar-shrink {
+      /* font-family: 'Pacifico', cursive; */
+        padding: 10px 0;
+        background-color: transparent;
+    }
+
+    /*logo style*/
+    .navbar-default.navbar-shrink .navbar-brand {
+      /* font-family: 'Pacifico', cursive; */
+        font-size: 2.3vw;
+        color: rgb(247, 251, 113);;
+        background-color: transparent;
+    }
+}
+
+/*_____________________________
+styling for shrunken menu*/
+.navbar-default {
+  border-color: transparent;
+  background-color: transparent;
+}
+/*Logo*/
+
+.navbar-default.navbar-shrink .navbar-brand {
+  position: absolute;
+  font-family: 'Pacifico', cursive;
+  left: 0;
+  top:0;
+  margin-left: 25px;
+  margin-top: 10px;
+  color: rgb(247, 251, 113);
+  background-color: transparent;
+}
+.navbar-default .navbar-brand {
+  font-family: 'Proxima Nova', bold;
+  color: rgb(247, 251, 113);
+  background-color: transparent;
+}
+.container{
+  background-color: transparent;
+}
+
+.navbar .navbar-default .navbar-fixed-top .navbar-shrink{
+  background-color: transparent;
+}
+
+
+
+/*________________________________________________
+    Header Styling Menu Icon & Dropdown Menu   ;*/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #132e54;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.overlay li {
+  padding: 8px;
+  font-family: sans-serif;
+  font-kerning: initial;
+  text-decoration: none;
+  font-size: 4.7vw;
+  font-weight: 700;
+  display: block;
+  margin:0 0 -10px 0;
+  transition: 0.3s;
+}
+.overlay a{
+  text-decoration: none;
+}
+
+.product{
+  color: #EFFF2B;
+}
+.product:hover, .product:focus{
+  opacity: 0.7;
+}
+.client{
+  color: #B22921;
+}
+.client:hover, .client:focus{
+  opacity: 0.7;
+}
+.about{
+  color: #FF2216;
+}
+.about:hover, .about:focus{
+  opacity: 0.7;
+}
+.contact{
+  color: #267CCC;
+}
+.contact:hover, .contact:focus{
+  opacity: 0.7;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/*_____________________________
+          Hamburger
+_____________________________*/
+
+.menu {
+  z-index: 3;
+}
+
+.menu-open-button {
+  position: fixed;
+  z-index: 1;
+  background-color: transparent;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  top: 10px;
+  margin-left: 0;
+  padding-top: 20px;
+  padding-left: 40px;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+          transition: transform ease-out 200ms;
+          transition: width 2s;
+}
+
+.menu-open {
+  display: none;
+  transition: width 2s;
+
+}
+
+.hamburger {
+  z-index: 3;
+  height: 2px;
+  width: 25px;
+  background: rgb(247, 251, 113);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  -webkit-transition: -webkit-transform 350ms;
+          transition: transform 600ms;
+}
+
+.hamburger-1 {
+  z-index: 3;
+  -webkit-transform: translate3d(0, -8px, 0);
+          transform: translate3d(0, -8px, 0);
+}
+
+.hamburger-2 {
+  z-index: 3;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.hamburger-3 {
+  z-index: 3;
+  -webkit-transform: translate3d(0, 8px, 0);
+          transform: translate3d(0, 8px, 0);
+}
+
+
+.menu-open:checked + .menu-open-button .hamburger-1 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+          transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.menu-open:checked + .menu-open-button .hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+          transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+.menu-open:checked + .menu-open-button .hamburger-3 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+          transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.menu-open-button {
+  z-index: 3;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+          transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+          transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+          transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+
+/*________________________________________________
+          Content/Background Styling
+  ________________________________________________*/
+
+
+
+
+html, body {
+  font-size: 62.5%;
+  height: 100%;
+  font-family: sans-serif;
+  background: radial-gradient(ellipse at center,#346e98 0%,#1c2f8e 80%);
+
+}
+
+
+body{
+  position: relative;
+  background-size:contain;
+  width: 80vw;
+  background-repeat: no-repeat;
+  background-image: url("../Img/Background.png");
+  margin-top: 18%;
+  margin-left: 10%;
+}
