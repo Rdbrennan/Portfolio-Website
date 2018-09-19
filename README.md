@@ -1,9 +1,6 @@
-# Weclome to
+# Weclome to Creatility
 
-![FlappyFlapLogo](https://github.com/Rdbrennan/FlappyFlapSaga/blob/master/Various%20Images/FlappyLogoIntro.png)
-
-# Flappy Flap Saga
-A recreation of the sensational Flappy Bird game!
+![FlappyFlapLogo](https://github.com/Rdbrennan/Portfolio-Website/blob/master/Img/Screen%20Shot%202018-09-18%20at%2010.00.00%20PM.png)
 
 
 # Projects
